@@ -1,0 +1,14 @@
+{
+  "name" : "rawphp/ecommerce",
+  "description" : "Ecommer using PHP",
+  "license": "MIT",
+  "authors": [
+    {
+      "name" : "Mamunur Rashid",
+      "email": "mamunurrashid6424@gmail.com"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "^v6.7.1"
+  }
+}
