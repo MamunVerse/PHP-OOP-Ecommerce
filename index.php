@@ -6,8 +6,36 @@ use Phroute\Phroute\Exception\HttpMethodNotAllowedException;
 use Phroute\Phroute\Exception\HttpRouteNotFoundException;
 use Phroute\Phroute\RouteCollector;
 use Phroute\Phroute\RouteParser;
+use Illuminate\Database\Capsule\Manager as Capsule;
+
 
 require_once 'vendor/autoload.php';
+
+$capsule = new Capsule();
+
+$capsule->addConnection([
+    'driver' => 'mysql',
+    'host' => 'localhost',
+    'database' => 'php_ecom',
+    'username' => 'root',
+    'password' => 'password',
+    'charset' => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix' => '',
+]);
+
+// Make this Capsule instance available globally via static methods... (optional)
+$capsule->setAsGlobal();
+
+// Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
+$capsule->bootEloquent();
+
+$users = Capsule::table('users')->get();
+
+echo "<pre>";
+var_dump($users);
+echo "</pre>";
+die();
 
 $router = new RouteCollector(new RouteParser());
 

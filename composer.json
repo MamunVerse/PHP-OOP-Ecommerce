@@ -10,7 +10,8 @@
   ],
   "require": {
     "phpmailer/phpmailer": "^v6.7.1",
-    "phroute/phroute": "^2.2"
+    "phroute/phroute": "^2.2",
+    "illuminate/database": "^9.43"
   },
   "autoload": {
     "psr-4": {
