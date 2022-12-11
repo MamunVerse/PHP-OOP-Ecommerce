@@ -3,7 +3,7 @@
         'name' => 'rawphp/ecommerce',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6c7f2e3b81f0da6349f71d90bcef8e907f8f0e16',
+        'reference' => '5e5212f9ce273c5cd272b42728939e279191d210',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'rawphp/ecommerce' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6c7f2e3b81f0da6349f71d90bcef8e907f8f0e16',
+            'reference' => '5e5212f9ce273c5cd272b42728939e279191d210',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

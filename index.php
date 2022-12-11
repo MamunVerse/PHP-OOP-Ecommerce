@@ -10,9 +10,8 @@ require_once 'vendor/autoload.php';
 
 $router = new RouteCollector(new RouteParser());
 
-$router->post('/', function (){
-    return 'Hello from Phroute';
-});
+$router->controller('/', \App\Controllers\HomeController::class);
+$router->controller('/users', \App\Controllers\UsersController::class);
 
 
 $dispatcher = new Dispatcher($router->getData());
