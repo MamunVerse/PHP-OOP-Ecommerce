@@ -9,6 +9,7 @@
     }
   ],
   "require": {
-    "phpmailer/phpmailer": "^v6.7.1"
+    "phpmailer/phpmailer": "^v6.7.1",
+    "phroute/phroute": "^2.2"
   }
 }
