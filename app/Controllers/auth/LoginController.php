@@ -8,4 +8,6 @@ class LoginController extends Controller
     public function getIndex(){
         $this->view('login');
     }
+
+
 }

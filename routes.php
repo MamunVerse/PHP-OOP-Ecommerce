@@ -8,9 +8,6 @@ use App\Controllers\frontend\UsersController;
 
 
 
-//Auth Routes
-$router->controller('/register', RegisterController::class);
-$router->controller('/login', LoginController::class);
 
 
 
@@ -19,6 +16,9 @@ $router->controller('/', HomeController::class);
 $router->controller('/users', UsersController::class);
 
 
+//Auth Routes
+//$router->controller('/login', LoginController::class);
+//$router->controller('/register', RegisterController::class);
 
 //Backend Routes
 $router->controller('/dashboard', DashboardController::class);
