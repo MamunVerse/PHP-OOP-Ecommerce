@@ -4,6 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
+                <?php  require_once 'partials/_notification.php' ?>
                 <form>
                     <h1 class="d-block text-center h3 mb-3 fw-normal"> Sign In</h1>
 

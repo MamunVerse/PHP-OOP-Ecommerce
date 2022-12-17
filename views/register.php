@@ -4,6 +4,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
+
+                <?php  require_once 'partials/_notification.php' ?>
                 <form method="post" action="/register" enctype="multipart/form-data">
                     <h1 class="d-block text-center h3 mb-3 fw-normal">Register</h1>
                     <div class="form-floating mb-2">
@@ -21,13 +23,7 @@
                     <div class="form-floating mb-2">
                         <input type="file" class="form-control" name="profile_photo">
                     </div>
-                    <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"> Remember me
-                        </label>
-                    </div>
                     <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
                 </form>
             </div>
         </div>

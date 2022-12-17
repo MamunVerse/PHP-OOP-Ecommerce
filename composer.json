@@ -12,7 +12,7 @@
     "phpmailer/phpmailer": "^v6.7.1",
     "phroute/phroute": "^2.2",
     "illuminate/database": "^9.43",
-    "illuminate/validation": "^9.43"
+    "respect/validation": "^2.2"
   },
   "autoload": {
     "psr-4": {
