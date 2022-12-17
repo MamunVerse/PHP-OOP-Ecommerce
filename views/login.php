@@ -5,25 +5,19 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <?php  require_once 'partials/_notification.php' ?>
-                <form>
+                <form action="/login" method="post">
                     <h1 class="d-block text-center h3 mb-3 fw-normal"> Sign In</h1>
 
                     <div class="form-floating  mb-2">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="floatingInput" name="email" placeholder="Email">
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating  mb-2">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
                         <label for="floatingPassword">Password</label>
                     </div>
 
-                    <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"> Remember me
-                        </label>
-                    </div>
                     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
                 </form>
             </div>
         </div>
